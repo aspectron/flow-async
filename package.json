@@ -29,8 +29,8 @@
   },
   "files": [
     "index.js",
-    "index.d.ts",
     "lib",
+    "dist",
     "README.md",
     "LICENSE",
     ".jsdoc.js"

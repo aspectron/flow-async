@@ -102,7 +102,7 @@ export class AsyncQueue {
 		this.reset_ = false;
 	}
 	[Symbol.asyncIterator]() { return this.iterator(); }
-	post(v:any, post_if_iterator_is_active:boolean) {
+	post(v:any, post_if_iterator_is_active:boolean = false) {
 		if(this.done)
 			return;
 		if(post_if_iterator_is_active && !this.active)
